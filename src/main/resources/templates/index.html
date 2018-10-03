@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org"
+       xmlns:layout="http://www.thymeleaf.org">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with a Design System for Bootstrap 4.">
+    <meta name="author" content="Creative Tim">
+    <title>MyAppPosition</title>
+
+    <!-- Favicon -->
+    <link th:href="@{/img/brand/favicon.png}" href="../static/img/brand/favicon.png" rel="icon" type="image/png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+    <link th:href="@{/vendor/nucleo/css/nucleo.css}" href="../static/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link th:href="@{/vendor/font-awesome/css/font-awesome.min.css}" href="../static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Argon CSS -->
+    <link type="text/css" th:href="@{/css/argon.css}" href="../static/css/argon.css" rel="stylesheet">
+    <!-- Docs CSS -->
+    <link type="text/css" href="../css/docs.min.css" rel="stylesheet">
+</head>
+
+<body>
+<header class="header-global">
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
+        <div class="container">
+            <a class="navbar-brand mr-lg-5" th:href="@{/index.html}" href="../static/index.html">
+                <img th:src="@{/img/brand/white.png}" src="../static/img/brand/white.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
+                    aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar_global">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a th:href="@{/index.html}" href="../static/index.html">
+                                <img th:src="@{/img/brand/blue.png}" src="../static/img/brand/blue.png">
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                    data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon" href="https://github.com/myappposition/" target="_blank"
+                           data-toggle="tooltip" title="Star us on Github">
+                            <i class="fa fa-github"></i>
+                            <span class="nav-link-inner--text d-lg-none">Github</span>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block ml-lg-4">
+                        <a href="№" target="_blank" class="btn btn-neutral btn-icon">
+                <span class="btn-inner--icon">
+                  <i class="fa fa-sign-in mr-2"></i>
+                </span>
+                            <span class="nav-link-inner--text">Войти</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="position-relative">
+        <!-- shape Hero -->
+        <section class="section section-lg section-shaped pb-250">
+            <div class="shape shape-style-1 shape-default">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="container py-lg-md d-flex">
+                <div class="col px-0">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1 class="display-3  text-white">Мониторинг позиций мобильного приложения
+                                <span>по ключевым словам</span>
+                            </h1>
+                            <p class="lead  text-white">Это проект с откртым исходным кодом.</p>
+                            <p class="text-white">Вы можете внести свой вклад на <a class="text-white"
+                                    href="https://github.com/myappposition/">github.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SVG separator -->
+            <div class="separator separator-bottom separator-skew">
+                <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <!-- 1st Hero Variation -->
+    </div>
+
+
+    <section class="section section-lg pt-lg-0 mt--100">
+        <div class="container">
+            <div class="row row-grid align-items-center">
+                <div class="col-md-6 order-md-2">
+                    <img th:src="@{/img/theme/promo-1.png}" src="../static/img/theme/promo-1.png" class="img-fluid floating">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <div class="pr-md-5">
+                        <div class="icon icon-lg rounded-circle mb-5">
+
+                        </div>
+                        <h3>Функциональные возможности</h3>
+                        <p>Публичная версия будет оставаться бесплатной при наличии ресурсов.</p>
+                        <ul class="list-unstyled mt-5">
+                            <li class="py-2">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="badge badge-circle badge-success mr-3">
+                                            <i class="ni ni-settings-gear-65"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Мониторинг по ключевым словам с учетом языка и региона</h6>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-2">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="badge badge-circle badge-success mr-3">
+                                            <i class="ni ni-html5"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Уведомления об измененияз позиций</h6>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-2">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="badge badge-circle badge-success mr-3">
+                                            <i class="ni ni-satisfied"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">История изменени позиций</h6>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section bg-secondary">
+        <div class="container">
+            <div class="row row-grid align-items-center">
+                <div class="col-md-6">
+                    <div class="card bg-default shadow border-0">
+                        <img th:src="@{/img/theme/img-1-1200x1000.jpg}" src="../static/img/theme/img-1-1200x1000.jpg" class="card-img-top">
+                        <blockquote class="card-blockquote">
+                            <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
+                                 class="svg-bg">
+                                <polygon points="0,52 583,95 0,95" class="fill-default"/>
+                                <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default"/>
+                            </svg>
+                            <h4 class="display-3 font-weight-bold text-white">Тут будет скриншот приложения</h4>
+                            <p class="lead text-italic text-white">Но пока его еще не выпустили</p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pl-md-5">
+                        <div class="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
+                            <i class="ni ni-settings"></i>
+                        </div>
+                        <h3>Мобильные приложения</h3>
+                        <p class="lead">Мобильные приложения доступны только при использовании публичной версии.</p>
+                        <p>Мобильные приложения будут платными, это коммерческое дополнение к продукту.</p>
+                        <p>P.S. Пока мы еще не сделали мобильные приложения</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-0 bg-gradient-warning">
+        <div class="container">
+            <div class="row row-grid align-items-center">
+                <div class="col-md-6 order-lg-2 ml-lg-auto">
+                    <div class="position-relative pl-md-5">
+                        <img th:src="@{/img/ill/ill-2.svg}" src="../static/img/ill/ill-2.svg" class="img-center img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="d-flex px-3">
+                        <div>
+                            <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+                                <i class="ni ni-building text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="pl-4">
+                            <h4 class="display-3 text-white">Веб версия</h4>
+                            <p class="text-white">Публичная версия будет оставаться бесплатной, пока это возможно.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow shadow-lg--hover mt-5">
+                        <div class="card-body">
+                            <div class="d-flex px-3">
+                                <div>
+                                    <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
+                                        <i class="ni ni-satisfied"></i>
+                                    </div>
+                                </div>
+                                <div class="pl-4">
+                                    <h5 class="title text-success">Self Hosted</h5>
+                                    <p>Self Hosted версия будет поставляться для установки в виде helm chart</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow shadow-lg--hover mt-5">
+                        <div class="card-body">
+                            <div class="d-flex px-3">
+                                <div>
+                                    <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
+                                        <i class="ni ni-active-40"></i>
+                                    </div>
+                                </div>
+                                <div class="pl-4">
+                                    <h5 class="title text-warning">Техническая поддержка</h5>
+                                    <p>Комменческой технической поддержки сейчас нет</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SVG separator -->
+        <div class="separator separator-bottom separator-skew zindex-100">
+            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg">
+                <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+    </section>
+    <section class="section section-lg">
+        <div class="container">
+
+
+        </div>
+    </section>
+    <section class="section section-lg pt-0">
+        <div class="container">
+            <div class="card bg-gradient-warning shadow-lg border-0">
+                <div class="p-5">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <h3 class="text-white">Почему этот сервис бесплатный?</h3>
+                            <p class="lead text-white mt-3">Выпустив свое собственное мобильное приложение, я очень
+                                хотел заниматься его продвижением с комфорттом, однако не нашел подходящего под
+                                бюджет weekend-project сервиса. Поэтому я решил это исправить</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+<footer class="footer has-cards">
+
+    <div class="container">
+
+        <div class="row align-items-center justify-content-md-between">
+            <div class="col-md-6">
+                <div class="copyright">
+                    Desing by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <ul class="nav nav-footer justify-content-end">
+                    <li class="nav-item">
+                        <a href="https://github.com/myappposition/accounts" class="nav-link" target="_blank">GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="404" class="nav-link" target="_blank">About
+                            Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="404" class="nav-link" target="_blank">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
+                           class="nav-link" target="_blank">MIT License</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Core -->
+<script th:src="@{/vendor/jquery/jquery.min.js}" src="../static/vendor/jquery/jquery.min.js"></script>
+<script th:src="@{/vendor/popper/popper.min.js}" src="../static/vendor/popper/popper.min.js"></script>
+<script th:src="@{/vendor/bootstrap/bootstrap.min.js}" src="../static/vendor/bootstrap/bootstrap.min.js"></script>
+<script th:src="@{/vendor/headroom/headroom.min.js}" src="../static/vendor/headroom/headroom.min.js"></script>
+<!-- Argon JS -->
+<script th:src="@{/js/argon.js?v=1.0.1}" src="../static/js/argon.js?v=1.0.1"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+# Default values for front-service.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: docker.io/myappposition/front-service
+  tag: latest
+  pullPolicy: IfNotPresent
+  imagePullSecret: docker-eu-gcr
+
+service:
+  type: ClusterIP
+  port: 8080
+
+ingress:
+  enabled: true
+  annotations:
+     igress.kubernetes.io/ssl-redirect: "true"
+     kubernetes.io/ingress.class: nginx
+     certmanager.k8s.io/cluster-issuer: letsencrypt-prod
+  path: /
+  hosts:
+    - myapp.vyukov.ru
+  tls:
+    - secretName: my-myapp-tls
+      hosts:
+        - myapp.vyukov.ru
+
+resources:
+   limits:
+    cpu: 1
+    memory: 512Mi
+   requests:
+    cpu: 0.2
+    memory: 428Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+endpoints:
+  accounts:
+    internalBaseUrl: http://tracker-service:8080
+    externalBaseUrl: https://auth.myappposition.office.devorel.com

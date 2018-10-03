@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "front-service.name" . }}
+  labels:
+    app: {{ template "front-service.name" . }}
+    chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+data:
+  endpoints.accounts.internalBaseUrl: {{ .Values.endpoints.tracker.internalBaseUrl }}
+  endpoints.accounts.externalBaseUrl: {{ .Values.endpoints.tracker.externalBaseUrl }}
